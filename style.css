@@ -5,7 +5,7 @@
 }body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 150vh;
     overflow-x: hidden;
     font-family: Arial, sans-serif;
 }
@@ -135,6 +135,7 @@ body {
   }
   @media(max-width : 860px){
     .sidebar{
+      top: 130px;
       height: auto;
       width: 70px;
       left: 0;
@@ -191,7 +192,7 @@ h3.card_title {
 
 .c1 {
   position: relative;
-  top:100%; /* Align to top */
+  top:600px; /* Align to top */
   left: 0; /* Align to left */
   width: 100%; /* Ensure it spans the full width */
   display: flex;
@@ -363,6 +364,7 @@ p:not(:last-child) {
 
 
 .card1 {
+  top: -100px;
   max-width: 300px;
   min-height: 200px;
   display: flex;
@@ -440,4 +442,36 @@ p:not(:last-child) {
   left: 35%;
 }
 
-
+@media (max-width:500px){
+  .c1{
+    margin-top: 1200px;
+    margin-left: 70px;
+    margin-right: 20px;
+    width: 85%;
+  }
+  .c4 {
+   
+    left: 20%;
+    right: auto;
+  }
+  .c3{
+    width: 87%;
+    left: 5%;
+    right: 5%;
+  }
+ .article-body .p1{
+  left: 5px;
+ }
+ .card1{
+  top: 400px;
+  left: 5px;
+  right: 5px;
+ }
+}
+@media (max-width:380px){
+  .card1{
+    top: 430px;
+    left: 5px;
+    right: 5px;
+   }
+}
